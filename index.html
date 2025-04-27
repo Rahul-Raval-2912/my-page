@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url("D:\Rahul-Raval-2912\download\images\211931.gif");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        @keyframes pixelPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .animate-pixelPulse {
+            animation: pixelPulse 1.5s infinite ease-in-out;
+        }
+        .animate-slideIn {
+            animation: slideIn 0.8s ease-out forwards;
+        }
+        .hover-glitch {
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+        .hover-glitch:hover {
+            transform: translate(3px, -3px);
+            filter: drop-shadow(0 0 8px #1e90ff);
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.8);
+            min-height: 100vh;
+        }
+        .pixel-border {
+            border: 3px solid #1e3a8a;
+            box-shadow: 0 0 8px #1e90ff;
+        }
+        .section {
+            backdrop-filter: blur(5px);
+        }
+    </style>
+</head>
+<body class="text-white">
+    <div class="overlay flex flex-col min-h-screen">
+        <header class="text-center py-10 bg-black bg-opacity-95">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="w-24 h-24 rounded-full mx-auto pixel-border animate-pixelPulse">
+            <h1 class="text-4xl font-bold mt-4 animate-slideIn text-blue-400">Rahul Raval</h1>
+            <p class="text-xl mt-2 animate-slideIn text-blue-300">avg </p>
+        </header>
+        <main class="container mx-auto px-4 py-8 flex-grow max-w-3xl">
+            <section class="section bg-black bg-opacity-70 rounded-lg p-6 mb-8 animate-slideIn pixel-border">
+                <h2 class="text-2xl font-bold text-center mb-4 text-blue-400">About Me</h2>
+                <p class="text-center text-blue-200">
+                    Yo, what's up? I'm Rahul, who loves chess, Minecraft, and making awesome stuff online. Whether it's slaying code or checkmating opponents, I'm here to dominate the game!
+                </p>
+            </section>
+            <section class="section bg-black bg-opacity-70 rounded-lg p-6 mb-8 animate-slideIn pixel-border">
+                <h2 class="text-2xl font-bold text-center mb-4 text-blue-400">My Skills</h2>
+                <ul class="flex flex-wrap justify-center gap-3">
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">Chess</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">Python</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">SQL</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">Java</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">Cloud</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">HTML</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">CSS</li>
+                    <li class="bg-blue-700 text-white px-3 py-1 rounded hover-glitch animate-pixelPulse">JavaScript</li>
+                </ul>
+            </section>
+            <section class="section bg-black bg-opacity-70 rounded-lg p-6 animate-slideIn pixel-border">
+                <h2 class="text-2xl font-bold text-center mb-4 text-blue-400">Connect With Me</h2>
+                <div class="flex justify-center gap-6">
+                    <a href="mailto:example@gmail.com" class="text-blue-300 hover:text-blue-500 hover-glitch" onclick="showAlert('Opening Gmail, let\'s vibe!')">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5V6l8 5 8-5z"/></svg>
+                    </a>
+                    <a href="https://github.com/Rahul-Raval-2912" target="_blank" class="text-blue-300 hover:text-blue-500 hover-glitch">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.16 19.44c.5.09.68-.22.68-.47v-1.69c-2.78.61-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .26.18.56.69.47A10 10 0 0012 2z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/rahul-raval-2912" target="_blank" class="text-blue-300 hover:text-blue-500 hover-glitch">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-9.5 14v-6H7v6h2.5zm.75-7.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm7.25 7.5v-3.5c0-1.9-1.1-2.9-2.5-2.9-1.1 0-2 .6-2.3 1.4v-1.4H12v6h2.5v-3.2c0-.9.5-1.4 1.2-1.4.7 0 1.3.5 1.3 1.4v3.2h2.5z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/rahul_raval_2912" target="_blank" class="text-blue-300 hover:text-blue-500 hover-glitch">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.21 0 3.58.01 4.85.07 1.17.06 1.81.25 2.23.41.56.22.96.48 1.38.91.43.42.69.82.91 1.38.17.42.35 1.06.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.91 1.38-.42.43-.82.69-1.38.91-.42.17-1.06.35-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.91-.43-.42-.69-.82-.91-1.38-.17-.42-.35-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.06 1.17.25 1.81.41 2.23.22.56.48.96.91 1.38.42.43.82.69 1.38.91.42.17 1.06.35 2.23.41 1.27.06 1.64.07 4.85.07zm0-2.16c-3.25 0-3.65.01-4.93.07-1.28.06-2.16.26-2.93.56-.8.3-1.47.71-2.14 1.38-.67.67-1.08 1.34-1.38 2.14-.3.77-.5 1.65-.56 2.93-.06 1.28-.07 1.68-.07 4.93s.01 3.65.07 4.93c.06 1.28.26 2.16.56 2.93.3.8.71 1.47 1.38 2.14.67.67 1.34 1.08 2.14 1.38.77.3 1.65.5 2.93.56 1.28.06 1.68.07 4.93.07s3.65-.01 4.93-.07c1.28-.06 2.16-.26 2.93-.56.8-.3 1.47-.71 2.14-1.38.67-.67 1.08-1.34 1.38-2.14.3-.77.5-1.65.56-2.93.06-1.28.07-1.68.07-4.93s-.01-3.65-.07-4.93c-.06-1.28-.26-2.16-.56-2.93-.3-.8-.71-1.47-1.38-2.14-.67-.67-1.34-1.08-2.14-1.38-.77-.3-1.65-.5-2.93-.56-1.28-.06-1.68-.07-4.93-.07zM12 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black bg-opacity-95 text-center py-4">
+            <p class="text-blue-300 text-sm">© 2025 Rahul Raval. Built with Code & Minecraft Magic!</p>
+        </footer>
+    </div>
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+        // Add animation delay to slideIn elements
+        document.querySelectorAll('.animate-slideIn').forEach((el, index) => {
+            el.style.animationDelay = `${index * 0.2}s`;
+        });
+    </script>
+</body>
+</html>
