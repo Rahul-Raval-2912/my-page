@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rahul Raval's portfolio showcasing coding, chess, and Minecraft skills">
     <title>Rahul's Epic Profile</title>
     <style>
         * {
@@ -11,39 +12,35 @@
             box-sizing: border-box;
         }
         body {
-            background-image: url("D:\Rahul-Raval-2912\download\images\188769884.jpg");
+            background-image: url('https://source.unsplash.com/random/1920x1080?cyberpunk');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
             min-height: 100vh;
             font-family: 'Courier New', Courier, monospace;
             color: #ffffff;
-            
             background-color: #1e3a8a;
         }
-        
         @keyframes pixelPulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
-        
         @keyframes slideIn {
-            0% { transform: translateY(50px); opacity: 0; }
+            0% { transform: translateY(20px); opacity: 0; }
             100% { transform: translateY(0); opacity: 1; }
         }
-        .animate-pixelPulse {
-            animation: pixelPulse 1.5s infinite ease-in-out;
+        .pixel-pulse {
+            animation: pixelPulse 2s infinite ease-in-out;
         }
-        .animate-slideIn {
-            animation: slideIn 0.8s ease-out forwards;
+        .slide-in {
+            animation: slideIn 0.6s ease-out forwards;
         }
-        .hover-glitch {
+        .glitch-hover {
             transition: transform 0.2s ease, filter 0.2s ease;
         }
-        .hover-glitch:hover {
-            transform: translate(3px, -3px);
-            filter: drop-shadow(0 0 8px #1e90ff);
+        .glitch-hover:hover {
+            transform: translate(2px, -2px);
+            filter: drop-shadow(0 0 6px #3b82f6);
         }
         .overlay {
             background: rgba(0, 0, 0, 0.8);
@@ -52,8 +49,8 @@
             flex-direction: column;
         }
         .pixel-border {
-            border: 3px solid #1e3a8a;
-            box-shadow: 0 0 8px #1e90ff;
+            border: 2px solid #1e40af;
+            box-shadow: 0 0 6px #60a5fa;
         }
         header {
             text-align: center;
@@ -162,59 +159,58 @@
 <body>
     <div class="overlay">
         <header>
-            <img src="D:\Rahul-Raval-2912\download\images\188769884.jpg" alt="Profile Picture" class="pixel-border animate-pixelPulse">
-            <h1 class="animate-slideIn">Rahul Raval</h1>
-            <p class="animate-slideIn">like programing & Chess player</p>
+            <img src="D:\Rahul-Raval-2912\download\images\188769884.jpg" alt="Rahul's Profile Picture" class="pixel-border pixel-pulse">
+            <h1 class="slide-in">Rahul Raval</h1>
+            <p class="slide-in">Coder, Chess Enthusiast & Minecraft Builder</p>
         </header>
         <main>
-            <section class="section animate-slideIn pixel-border">
+            <section class="section slide-in pixel-border">
                 <h2>About Me</h2>
                 <p>
-                    Yo, what's up? I'm Rahul, a coding beginer who loves chess, Minecraft, and making awesome stuff online. Whether it's slaying code or checkmating opponents, I'm here to dominate the game!
+                    Hey there! I'm Rahul, a passionate coder diving into the world of programming. I love strategizing over a chessboard, building epic structures in Minecraft, and creating cool stuff online. Ready to code, play, and conquer!
                 </p>
             </section>
-            <section class="section animate-slideIn pixel-border">
+            <section class="section slide-in pixel-border">
                 <h2>My Skills</h2>
                 <ul class="skills-list">
-                    <li class="hover-glitch animate-pixelPulse">Chess</li>
-                    <li class="hover-glitch animate-pixelPulse">Python</li>
-                    <li class="hover-glitch animate-pixelPulse">SQL</li>
-                    <li class="hover-glitch animate-pixelPulse">Java</li>
-                    <li class="hover-glitch animate-pixelPulse">Cloud</li>
-                    <li class="hover-glitch animate-pixelPulse">HTML</li>
-                    <li class="hover-glitch animate-pixelPulse">CSS</li>
-                    <li class="hover-glitch animate-pixelPulse">JavaScript</li>
+                    <li class="glitch-hover pixel-pulse">Chess</li>
+                    <li class="glitch-hover pixel-pulse">Python</li>
+                    <li class="glitch-hover pixel-pulse">SQL</li>
+                    <li class="glitch-hover pixel-pulse">Java</li>
+                    <li class="glitch-hover pixel-pulse">Cloud</li>
+                    <li class="glitch-hover pixel-pulse">HTML</li>
+                    <li class="glitch-hover pixel-pulse">CSS</li>
+                    <li class="glitch-hover pixel-pulse">JavaScript</li>
                 </ul>
             </section>
-            <section class="section animate-slideIn pixel-border">
+            <section class="section slide-in pixel-border">
                 <h2>Connect With Me</h2>
                 <div class="social-links">
-                    <a href="mailto:example@gmail.com" class="hover-glitch" onclick="showAlert('Opening Gmail, let\'s vibe!')">
+                    <a href="mailto:rahularaval2912@gmail.com" class="glitch-hover" onclick="showAlert('Opening Gmail, let\'s connect!')" aria-label="Email Rahul">
                         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5V6l8 5 8-5z"/></svg>
                     </a>
-                    <a href="https://github.com/Rahul-Raval-2912" target="_blank" class="hover-glitch">
+                    <a href="https://github.com/Rahul-Raval-2912" target="_blank" class="glitch-hover" aria-label="Rahul's GitHub">
                         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.16 19.44c.5.09.68-.22.68-.47v-1.69c-2.78.61-3.37-1.34-3.37-1.34-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .26.18.56.69.47A10 10 0 0012 2z"/></svg>
                     </a>
-                    <a href="https://in/rahul-raval-27a5a932a" target="_blank" class="hover-glitch">
+                    <a href="https://linkedin.com/in/rahul-raval-27a5a932a" target="_blank" class="glitch-hover" aria-label="Rahul's LinkedIn">
                         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-9.5 14v-6H7v6h2.5zm.75-7.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm7.25 7.5v-3.5c0-1.9-1.1-2.9-2.5-2.9-1.1 0-2 .6-2.3 1.4v-1.4H12v6h2.5v-3.2c0-.9.5-1.4 1.2-1.4.7 0 1.3.5 1.3 1.4v3.2h2.5z"/></svg>
                     </a>
-                    <a href="https://instagram.com/rahul_raval_2912" target="_blank" class="hover-glitch">
-                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.21 0 3.58.01 4.85.07 1.17.06 1.81.25 2.23.41.56.22.96.48 1.38.91.43.42.69.82.91 1.38.17.42.35 1.06.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.91 1.38-.42.43-.82.69-1.38.91-.42.17-1.06.35-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.91-.43-.42-.69-.82-.91-1.38-.17-.42-.35-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.06 1.17.25 1.81.41 2.23.22.56.48.96.91 1.38.42.43.82.69 1.38.91.42.17 1.06.35 2.23.41 1.27.06 1.64.07 4.85.07zm0-2.16c-3.25 0-3.65.01-4.93.07-1.28.06-2.16.26-2. Todas las demás etiquetas y contenido permanecen sin cambios.</p>
+                    <a href="https://instagram.com/rahul_raval_2912" target="_blank" class="glitch-hover" aria-label="Rahul's Instagram">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.21 0 3.58.01 4.85.07 1.17.06 1.81.25 2.23.41.56.22.96.48 1.38.91.43.42.69.82.91 1.38.17.42.35 1.06.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.91 1.38-.42.43-.82.69-1.38.91-.42.17-1.06.35-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.91-.43-.42-.69-.82-.91-1.38-.17-.42-.35-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.06-1.17.25-1.81.41-2.23.22-.56.48-.96.91-1.38.42-.43.82-.69 1.38-.91.42-.17 1.06.35 2.23-.41 1.27-.06 1.64-.07 4.85-.07zm0-2.16c-3.25 0-3.65.01-4.93.07-1.28.06-2.16.26-2.93.55-.95.36-1.76.84-2.57 1.65-.81.81-1.29 1.62-1.65 2.57-.29.77-.49 1.65-.55 2.93-.06 1.28-.07 1.68-.07 4.93s.01 3.65.07 4.93c.06 1.28.26 2.16.55 2.93.36.95.84 1.76 1.65 2.57.81.81 1.62 1.29 2.57 1.65.77.29 1.65.49 2.93.55 1.28.06 1.68.07 4.93.07s3.65-.01 4.93-.07c.1.28-.06 2.16-.26 2.93-.55.95-.36 1.76-.84 2.57-1.65.81-.81 1.29-1.62 1.65-2.57.29-.77.49-1.65.55-2.93.06-1.28.07-1.68.07-4.93s-.01-3.65-.07-4.93c-.06-1.28-.26-2.16-.55-2.93-.36-.95-.84-1.76-1.65-2.57-.81-.81-1.62-1.29-2.57-1.65-.77-.29-1.65-.49-2.93-.55-1.28-.06-1.68-.07-4.93-.07zm0 5.58a6.42 6.42 0 100 12.84 6.42 6.42 0 000-12.84zm0 10.59a4.17 4.17 0 110-8.34 4.17 4.17 0 010 8.34zm8.15-11.76a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+                    </a>
                 </div>
-            </section>4
+            </section>
         </main>
         <footer>
-            <p>© 2025 Rahul Raval. Built with Code & Minecraft Magic!</p>
+            <p>© 2025 Rahul Raval. Crafted with Code & Minecraft Magic!</p>
         </footer>
     </div>
     <script>
-        // Alert for Gmail link
         function showAlert(message) {
             alert(message);
         }
-        // Animation delay for slide-in effect
-        document.querySelectorAll('.animate-slideIn').forEach((el, index) => {
-            el.style.animationDelay = `${index * 0.2}s`;
+        document.querySelectorAll('.slide-in').forEach((el, index) => {
+            el.style.animationDelay = `${index * 0.15}s`;
         });
     </script>
 </body>
