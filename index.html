@@ -19,7 +19,7 @@
             min-height: 100vh;
             font-family: 'Courier New', Courier, monospace;
             color: #ffffff;
-            background-color: #1e3a8a;
+            background-color: #3b82f6; /* Brighter blue fallback for better visibility */
         }
         @keyframes pixelPulse {
             0%, 100% { transform: scale(1); }
@@ -43,10 +43,11 @@
             filter: drop-shadow(0 0 6px #3b82f6);
         }
         .overlay {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.5); /* Reduced opacity for brighter background */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            opacity: 0.7; /* Lowered opacity for front content */
         }
         .pixel-border {
             border: 2px solid #1e40af;
@@ -55,7 +56,7 @@
         header {
             text-align: center;
             padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(0, 0, 0, 0.6); /* Reduced opacity for header */
         }
         header img {
             width: 96px;
@@ -81,7 +82,7 @@
             flex-grow: 1;
         }
         .section {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.4); /* Reduced opacity for sections */
             border-radius: 8px;
             padding: 24px;
             margin-bottom: 32px;
@@ -111,6 +112,7 @@
             color: #ffffff;
             padding: 8px 12px;
             border-radius: 4px;
+            opacity: 0.7; /* Reduced opacity for skill tags */
         }
         .social-links {
             display: flex;
@@ -120,16 +122,18 @@
         .social-links a {
             color: #93c5fd;
             text-decoration: none;
+            opacity: 0.7; /* Reduced opacity for social icons */
         }
         .social-links a:hover {
             color: #3b82f6;
+            opacity: 1; /* Full opacity on hover for clarity */
         }
         .social-links svg {
             width: 32px;
             height: 32px;
         }
         footer {
-            background: rgba(0, 0, 0, 0.95);
+            background: rgba(0, 0, 0, 0.6); /* Reduced opacity for footer */
             text-align: center;
             padding: 16px;
             color: #93c5fd;
@@ -161,13 +165,13 @@
         <header>
             <img src="https://github.com/Rahul-Raval-2912/my-page/blob/main/188769884.jpg?raw=true" alt="Rahul's Profile Picture" class="pixel-border pixel-pulse">
             <h1 class="slide-in">Rahul Raval</h1>
-            <p class="slide-in">Coder, Chess Enthusiast & Minecraft Builder</p>
+            <p class="slide-in">Coder, Chess Enthusiast & good gamer</p>
         </header>
         <main>
             <section class="section slide-in pixel-border">
                 <h2>About Me</h2>
                 <p>
-                    Hey there! I'm Rahul, a passionate coder diving into the world of programming. I love strategizing over a chessboard, building epic structures in Minecraft, and creating cool stuff online. Ready to code, play, and conquer!
+                    Hey there! I'm Rahul, a passionate coder diving into the world of programming. I love strategizing over a chessboard, and creating cool stuff online. Ready to code, play, and conquer!
                 </p>
             </section>
             <section class="section slide-in pixel-border">
@@ -196,13 +200,13 @@
                         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-9.5 14v-6H7v6h2.5zm.75-7.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm7.25 7.5v-3.5c0-1.9-1.1-2.9-2.5-2.9-1.1 0-2 .6-2.3 1.4v-1.4H12v6h2.5v-3.2c0-.9.5-1.4 1.2-1.4.7 0 1.3.5 1.3 1.4v3.2h2.5z"/></svg>
                     </a>
                     <a href="https://instagram.com/rahul_raval_2912" target="_blank" class="glitch-hover" aria-label="Rahul's Instagram">
-                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.21 0 3.58.01 4.85.07 1.17.06 1.81.25 2.23.41.56.22.96.48 1.38.91.43.42.69.82.91 1.38.17.42.35 1.06.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.91 1.38-.42.43-.82.69-1.38.91-.42.17-1.06.35-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.91-.43-.42-.69-.82-.91-1.38-.17-.42-.35-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.06-1.17.25-1.81.41-2.23.22-.56.48-.96.91-1.38.42-.43.82-.69 1.38-.91.42-.17 1.06.35 2.23-.41 1.27-.06 1.64-.07 4.85-.07zm0-2.16c-3.25 0-3.65.01-4.93.07-1.28.06-2.16.26-2.93.55-.95.36-1.76.84-2.57 1.65-.81.81-1.29 1.62-1.65 2.57-.29.77-.49 1.65-.55 2.93-.06 1.28-.07 1.68-.07 4.93s.01 3.65.07 4.93c.06 1.28.26 2.16.55 2.93.36.95.84 1.76 1.65 2.57.81.81 1.62 1.29 2.57 1.65.77.29 1.65.49 2.93.55 1.28.06 1.68.07 4.93.07s3.65-.01 4.93-.07c.1.28-.06 2.16-.26 2.93-.55.95-.36 1.76-.84 2.57-1.65.81-.81 1.29-1.62 1.65-2.57.29-.77.49-1.65.55-2.93.06-1.28.07-1.68.07-4.93s-.01-3.65-.07-4.93c-.06-1.28-.26-2.16-.55-2.93-.36-.95-.84-1.76-1.65-2.57-.81-.81-1.62-1.29-2.57-1.65-.77-.29-1.65-.49-2.93-.55-1.28-.06-1.68-.07-4.93-.07zm0 5.58a6.42 6.42 0 100 12.84 6.42 6.42 0 000-12.84zm0 10.59a4.17 4.17 0 110-8.34 4.17 4.17 0 010 8.34zm8.15-11.76a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.21 0 3.58.01 4.85.07 1.17.06 1.81.25 2.23.41.56.22.96.48 1.38.91.43.42.69.82.91 1.38.17.42.35 1.06.41 2.23.06 1.27.07 1.64.07 4.85s-.01 3.58-.07 4.85c-.06 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.91 1.38-.42.43-.82.69-1.38.91-.42.17-1.06.35-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.06-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.91-.43-.42-.69-.82-.91-1.38-.17-.42-.35-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c-.06 1.17-.25 1.81-.41 2.23-.22-.56-.48-.96-.91-1.38-.42-.43-.82-.69-1.38-.91-.42-.17-1.06-.35-2.23-.41-1.27-.06-1.64-.07-4.85-.07zm0-2.16c-3.25 0-3.65.01-4.93.07-1.28.06-2.16.26-2.93.55-.95.36-1.76.84-2.57 1.65-.81.81-1.29 1.62-1.65 2.57-.29.77-.49 1.65-.55 2.93-.06 1.28-.07 1.68-.07 4.93s.01 3.65.07 4.93c.06 1.28.26 2.16.55 2.93.36.95.84 1.76 1.65 2.57.81.81 1.62 1.29 2.57 1.65.77.29 1.65.49 2.93.55 1.28.06 1.68.07 4.93.07s3.65-.01 4.93-.07c.1.28-.06 2.16-.26 2.93-.55.95-.36 1.76-.84 2.57-1.65.81-.81 1.29-1.62 1.65-2.57.29-.77.49-1.65.55-2.93.06-1.28.07-1.68.07-4.93s-.01-3.65-.07-4.93c-.06-1.28-.26-2.16-.55-2.93-.36-.95-.84-1.76-1.65-2.57-.81-.81-1.62-1.29-2.57-1.65-.77-.29-1.65-.49-2.93-.55-1.28-.06-1.68-.07-4.93-.07zm0 5.58a6.42 6.42 0 100 12.84 6.42 6.42 0 000-12.84zm0 10.59a4.17 4.17 0 110-8.34 4.17 4.17 0 010 8.34zm8.15-11.76a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
                     </a>
                 </div>
             </section>
         </main>
         <footer>
-            <p>© 2025 Rahul Raval. Crafted with Code & Minecraft Magic!</p>
+            <p>© 2025 Rahul Raval. Crafted with Code !</p>
         </footer>
     </div>
     <script>
